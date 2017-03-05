@@ -15,7 +15,7 @@
         <input type="text" placeholder="Login name" id="login_name" name="login_name"><br/>
         <input type="text" placeholder="Email" id="email" name="email"><br/>
         <input type="password" placeholder="Password" id="password" name="password"><br/>
-        <input type="password" placeholder="Repeat password" id="repeat_password" name="repeat_password"><br/>
+        <input type="password" placeholder="Repeat password" id="r_password" name="repeat_password"><br/>
         <div id="messageShow"></div>
         <input type="button" name="done" id="sign_in" value="Sign IN"><br/>
     </div>

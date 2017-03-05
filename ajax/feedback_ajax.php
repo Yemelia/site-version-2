@@ -12,6 +12,7 @@ if ($name == '' || $email == '' || $email == '' || $message == ''){
 
 $subject = "=?utf-8?".base64_encode($subject)."?=";
 $headers = "From: $email\rnReply-to: $email\r\nContent-type: text/html; charset = utf-8\r\n";
-if (mail("your_address@gmail.com", $subject, $message, $headers ))
-    echo "Сообщение отрпавлено";
-else  echo "Ошибка при отправке";
+//if (mail("your_address@gmail.com", $subject, $message, $headers ))
+  //  echo "Сообщение отрпавлено";
+//else
+    echo "Ошибка при отправке";
