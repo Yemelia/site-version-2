@@ -24,7 +24,7 @@
                 <p>
 					".$news[$i]["intro_text"]."
                 </p>
-                    <a href=\"article.php?id=".$news[$i]["id"]."\"><div class=\"more\">Далее</div></a>
+                    <a href=\"article.php?id=".$news[$i]["id"]."\"><div class=\"more\">Read</div></a>
                 </div>";
                 if ($i == 0)
                     echo "<div class=\"clear\">

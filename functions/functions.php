@@ -39,3 +39,17 @@ function resultToArray($result){
     return $array;
 
 }
+
+
+function addNewUser(){
+    global $mysqli;
+    connectDB();
+    if(isset($_POST['done'])){
+        $login_name = htmlspecialchars($_POST['login_name']);
+        $email = htmlspecialchars($_POST['email']);
+        $password = htmlspecialchars($_POST['password']);
+        $mysqli->query("INSERT INTO `users` VALUES(NULL, '$login_name', '$email', '$password')");
+    }
+    closeDB();
+
+}

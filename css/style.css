@@ -63,7 +63,9 @@ header #logo{
 header #logo a{
     color: #C9E02D;
     font-size: 2em;
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
+    font-style: italic;
+    font-weight: 600
 }
 
 
@@ -73,6 +75,7 @@ header #regAuth{
     text-align: right;
     font-size: 1.3em;
     color: #274E5D;
+    font-family: "Trebuchet MS", sans-serif;
 }
 
 /*Стили для всего документа*/
@@ -87,7 +90,7 @@ header #regAuth{
 #wrapper #leftCol #bigArticle{
     width: 78%;
     margin-left: 10%;
-    background-color: #f6f6f6;
+    background-color: #4C91A0;
     padding: 1%;
     float: left;
 }
@@ -106,8 +109,8 @@ header #regAuth{
 #wrapper #leftCol #bigArticle div.more, #wrapper #leftCol .article div.more{
     padding: 5px;
     border-radius: 5px;
-    background-color: #878787;
-    color: #ffffff;
+    background-color: #274E5D;
+    color: #C9E02D;
     width: 10%;
     text-align: center;
     margin-top: 10px;
@@ -167,7 +170,7 @@ header #regAuth{
 #wrapper #leftCol .article{
     width: 40%;
     margin-left: 5%;
-    background-color: #f6f6f6;
+    background-color: #4C91A0;
     padding: 1%;
     float: left;
 
@@ -262,6 +265,7 @@ footer #menuFooter div{
     color: #C9E02D;
     font-size: 1.2em;
     text-align: center;
+    font-family: "Trebuchet MS", sans-serif;
 }
 
 footer #menuFooter div:hover{
