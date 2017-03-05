@@ -11,15 +11,14 @@
 <body>
 <?php require_once "blocks/header.php" ?>
 <div id="wrapper">
-    <div id="leftCol">
+    <div id="leftCol" style="width: 100%">
         <input type="text" placeholder="Login name" id="login_name" name="login_name"><br/>
         <input type="text" placeholder="Email" id="email" name="email"><br/>
-        <input type="text" placeholder="Password" id="password" name="password"><br/>
-        <input type="text" placeholder="Repeat password" id="repeat_password" name="repeat_password"><br/>
+        <input type="password" placeholder="Password" id="password" name="password"><br/>
+        <input type="password" placeholder="Repeat password" id="repeat_password" name="repeat_password"><br/>
         <div id="messageShow"></div>
-        <input type="button" name="done" id="done" value="Sign IN"><br/>
+        <input type="button" name="done" id="sign_in" value="Sign IN"><br/>
     </div>
-    <?php require_once "blocks/rightCol.php"?>
 </div>
 <?php require_once "blocks/footer.php"?>
 

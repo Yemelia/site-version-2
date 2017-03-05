@@ -14,7 +14,9 @@ $(document).ready(function () {
         }
         else $("#name").css("border-color", "#106a1b");
 
-        if(email.split('@').length-1 == 0 || email.split('.').length-1==0){
+        if(!((email.indexOf(".") > 0) &&
+            (email.indexOf("@") > 0)) ||
+            /[^a-zA-Z0-9.@_-]/.test(email)){
             fail += "Неккоректный email <br/>";
             $("#email").css("border-color", "red");
         }
