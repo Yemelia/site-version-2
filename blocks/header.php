@@ -1,17 +1,9 @@
 
 <header>
-        <div id="logo">
-            <a href="http://emelya_learning/www2/index.php" title="Перейти на главную"><span>H</span>овости</a>
-        </div>
-        <div id="menuHead">
-            <a href="about.php">
-                <div style="margin-right:5% ">О нас</div>
-            </a>
-            <a href="feedback.php">
-                <div>Обратная связь</div>
-            </a>
-        </div>
-        <div id="regAuth">
-            <a href="reg.php">Регистрация</a> | <a href="auth.php">Авторизация</a>
-        </div>
-    </header>
+    <div id="logo">
+        <a href="http://emelya_learning/new%20www/index.php" title="Перейти на главную">News</a>
+    </div>
+    <div id="regAuth">
+        <a href="reg.php">Log In</a> | <a href="auth.php">Sign In</a>
+    </div>
+</header>

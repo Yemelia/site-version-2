@@ -12,7 +12,7 @@ html{height:100%}
 body{
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: #C9E02D;
     color: #333333;
     font-family: "Segoe UI", Arial, sans-serif; /*Шрифт*/
     font-size: 1em;
@@ -27,13 +27,10 @@ img{
 }
 
 a{
-    color: #d38484;
     text-decoration: none; /*Подчеркивание текста*/
+    color: #C9E02D;
 }
 
-a:hover{
-    color: #106a1b;
-}
 
 a, a:hover{
     -webkit-transition: all.6s ease; /*изменение цвета ссылки через время*/
@@ -53,8 +50,8 @@ header{
     width: 98%;
     float: left;
     padding: 1%;
-    background-color: #fafafa;
-    border-bottom: 2px solid silver;
+    background-color: #4C91A0;
+    border-bottom: 3px solid #274E5D;
     margin-bottom: 20px;
 }
 
@@ -64,37 +61,18 @@ header #logo{
 }
 
 header #logo a{
-    color: #939393;
+    color: #C9E02D;
     font-size: 2em;
     font-family: "Times New Roman", sans-serif;
 }
 
-header #logo span{
-    color:#e36565; /*Извенение первой буквы logo, заключенной в span*/
-}
-
-header #menuHead{
-    width: 40%;
-    float: left;
-}
-
-header #menuHead div{
-    float: left;
-    padding: 5px;
-    background-color: #c8c8c8 ;
-    border-radius: 10px ;
-    color: #ffffff;
-}
-header #menuHead div:hover{  /*Изменяем цвет фона при наведении на надписи о на и обратная связь*/
-    background-color: #e7e7e7;
-}
-
 
 header #regAuth{
-    width: 30%;
+    width: 70%;
     float: left;
     text-align: right;
-    font-size: 1em;
+    font-size: 1.3em;
+    color: #274E5D;
 }
 
 /*Стили для всего документа*/
@@ -229,7 +207,7 @@ header #regAuth{
     width: 100%;
     float: left;
     margin-bottom:20px;
-    border: 2px solid silver; /*рамки вокург банеров*/
+    border: 2px solid #274E5D; /*рамки вокург банеров*/
     box-sizing: border-box;
 }
 
@@ -241,10 +219,14 @@ footer{
     width: 98%;
     float: left;
     padding: 1%;
-    background-color: #fafafa;
-    border-top: 2px solid silver;
+    background-color: #4C91A0;
+    border-top: 3px solid #274E5D;
     margin-top: 10px;
     height: 30px;
+    position:relative;
+    left:0px;
+    bottom:0px;
+
 }
 
 footer #rights{
@@ -256,11 +238,35 @@ footer #rights{
 
 footer #social{
     float: left;
-    width: 50%;
+    width: 20%;
 }
 
 footer #social img{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     margin-right: 2px;
+    border: 3px solid #C9E02D;
+    border-radius: 20px;
 }
+
+footer #menuFooter{
+    width: 50%;
+    float: left;
+}
+
+footer #menuFooter div{
+    float: left;
+    padding: 5px;
+    background-color: #274E5D ;
+    border-radius: 10px ;
+    color: #C9E02D;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+footer #menuFooter div:hover{
+    border: 3px solid #C9E02D;
+    border-radius: 10px;
+}
+
+
