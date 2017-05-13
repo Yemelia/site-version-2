@@ -13,13 +13,15 @@ html{height:100%}
 body{
     width: 100%;
     height: 100%;
-    background-color: #C9E02D;
+    background-image: url(../img/bg.jpg);
+    background-size: 100%;
     color: #333333;
     font-family: "Segoe UI", Arial, sans-serif; /*Шрифт*/
     font-size: 1em;
     line-height: 135%; /*Расстояние между строками*/
     float: left;
     min-height: 100%;
+
 }
 
 img{
@@ -33,7 +35,6 @@ a{
     color: #C9E02D;
 }
 
-
 a, a:hover{
     -webkit-transition: all.6s ease; /*изменение цвета ссылки через время*/
     -moz-transition: all.6s ease;
@@ -46,14 +47,10 @@ a, a:hover{
     clear: both;
 }
 
-/*Стили для шапки*/
-
 header{
     width: 98%;
     float: left;
     padding: 1%;
-    background-color: #4C91A0;
-    border-bottom: 3px solid #274E5D;
     margin-bottom: 20px;
 }
 
@@ -80,15 +77,12 @@ header #regAuth{
     font-family: "Trebuchet MS", sans-serif;
 }
 
-/*Стили для всего документа*/
-
 #wrapper{
     width: 80%;
     margin-left: 10%;
     float: left;
     min-height: calc(100% - 30px);
 }
-/*Стили для левой колонки*/
 
 #wrapper #leftCol #bigArticle{
     width: 78%;
@@ -157,6 +151,17 @@ header #regAuth{
     font-size: 1.2em;
     resize: none;
 }
+#wrapper button{
+    align-content: center;
+    width: 41.5%;
+    height: 30px;
+    margin-left: 30%;
+    border: 2px solid #106a1b;
+    background-color: #f4f4f4;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 18px;
+    color: #106a1b;
+}
 
 #wrapper #leftCol #bigArticle div.more:hover, #wrapper #leftCol .article div.more:hover{
     background-color: #9f9f9f;
@@ -201,23 +206,6 @@ header #regAuth{
     border: 1px solid silver;
     background-color: #f4f4f4;
 }
-
-
-/*Стили для правой колонки*/
-#wrapper #rightCol{
-    width: 20%;
-    float: left;
-}
-
-#wrapper #rightCol .banner{
-    width: 100%;
-    float: left;
-    margin-bottom:20px;
-    border: 2px solid #274E5D; /*рамки вокург банеров*/
-    box-sizing: border-box;
-}
-
-
 
 /*Стили для футора*/
 
@@ -274,6 +262,52 @@ footer #menuFooter div{
 footer #menuFooter div:hover{
     border: 3px solid #C9E02D;
     border-radius: 10px;
+}
+
+.slider {
+    margin-top: 15%;
+    margin-left: 34%;
+    z-index: 9;
+    width: 700px;
+    height: 290px;
+    overflow: hidden;
+    position: relative;
+}
+.slider ul,
+.slider li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.slider ul {
+    width: 9999px;
+}
+.slider ul li {
+    list-style-type: none;
+    float: left;
+    width: 700px;
+    height: 290px;
+}
+.slider .nav {
+    position: absolute;
+    left: 15px;
+    bottom: 12px;
+}
+.slider .nav span {
+    opacity: 0.9;
+    background: #fff;
+    margin: 0 8px 0 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    float: left;
+    box-shadow: 0 1px 2px #000;
+}
+.slider .nav span.on {
+    background: #2e9419;
 }
 
 

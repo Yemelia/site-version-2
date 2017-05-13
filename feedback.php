@@ -19,7 +19,6 @@
         <div id="messageShow"></div>
         <input type="button" name="done" id="done" value="Отправить"><br/>
     </div>
-    <?php require_once "blocks/rightCol.php"?>
 </div>
 <?php require_once "blocks/footer.php"?>
 

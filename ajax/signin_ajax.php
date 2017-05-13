@@ -1,7 +1,6 @@
 <?php
 require_once "../functions/functions.php";
 
-
 function addNewUser(){
     global $mysqli;
     connectDB();

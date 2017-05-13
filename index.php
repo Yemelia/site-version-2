@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <?php
     require_once "functions/functions.php";
     $title = "Новости обо всем";
     require_once "blocks/head.php";
-    $news = getNews(3,"");
     ?>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body>
     <?php require_once "blocks/header.php" ?>
+    <div class="slider">
+        <ul>
+            <li><img src="img/slider/1.jpg" alt="" /></li>
+            <li><img src="img/slider/2.jpg" alt="" /></li>
+        </ul>
+    </div>
     <div id="wrapper">
         <div id="leftCol">
-            <?php
-            for ($i = 0; $i<count($news); $i++) {
-                if ($i == 0) {
-                    echo "<div id=\"bigArticle\">";
-                } else echo "<div class=\"article\">";
-                echo "<img src=\"img/articles/".$news[$i]["id"].".jpg\" alt=\"Статья 1\"".$news[$i]["id"]." 
-                title=\"Статья 1\"".$news[$i]["id"].">
-                <h2>".$news[$i]["title"]."</h2>
-                <p>
-					".$news[$i]["intro_text"]."
-                </p>
-                    <a href=\"article.php?id=".$news[$i]["id"]."\"><div class=\"more\">Read</div></a>
-                </div>";
-                if ($i == 0)
-                    echo "<div class=\"clear\">
-                            <br/>
-                          </div>";
-            }
-            ?>
         </div>
-        <?php require_once "blocks/rightCol.php"?>
     </div>
 <?php require_once "blocks/footer.php"?>
 

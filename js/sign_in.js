@@ -1,7 +1,5 @@
-
 $(document).ready(function () {
-
-    $("#sign_in").click(function () {
+    $( "#sign_in" ).bind( "click", function() {
         $('#messageShow').hide();
         var name =$('#login_name').val();
         var email =$("#email").val();
@@ -38,13 +36,14 @@ $(document).ready(function () {
             $('#messageShow').show();
             return false;
         }
-
         $.ajax({
             url:"ajax/signin_ajax.php",
             type:"POST",
             data :{'done':'success' ,'login_name':name, 'email':email, 'password':password},
             success:function () {
-
+                alert("keke");
+                $('#sign_in').hide();
+                $('.success').show();
             }
         });
 

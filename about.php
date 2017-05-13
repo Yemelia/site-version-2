@@ -25,7 +25,6 @@
             </p>
         </div>
     </div>
-    <?php require_once "blocks/rightCol.php"?>
 </div>
 <?php require_once "blocks/footer.php"?>
 

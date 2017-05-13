@@ -17,7 +17,8 @@
         <input type="password" placeholder="Password" id="password" name="password"><br/>
         <input type="password" placeholder="Repeat password" id="r_password" name="repeat_password"><br/>
         <div id="messageShow"></div>
-        <input type="button" name="done" id="sign_in" value="Sign IN"><br/>
+        <button id="sign_in">Sign IN</button><br/>
+        <div class="success" style="display: none">You are registered</div>
     </div>
 </div>
 <?php require_once "blocks/footer.php"?>
